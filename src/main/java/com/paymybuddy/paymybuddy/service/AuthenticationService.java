@@ -5,7 +5,7 @@ import com.paymybuddy.paymybuddy.dao.request.SigninRequest;
 import com.paymybuddy.paymybuddy.dao.response.JwtAuthenticationResponse;
 
 public interface AuthenticationService {
-    JwtAuthenticationResponse signup(SignUpRequest request);
+    void signup(SignUpRequest request);
 
     JwtAuthenticationResponse signin(SigninRequest request);
 }
